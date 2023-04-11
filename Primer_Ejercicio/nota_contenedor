@@ -1,0 +1,2 @@
+Para hacer correr el contenedor aplicar la siguiente linea:
+docker run -p "80:80" -v ${PWD}:/var/www/html/ mattrayner/lamp:latest-1804
