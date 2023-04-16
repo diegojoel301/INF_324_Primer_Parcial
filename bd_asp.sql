@@ -61,3 +61,32 @@ INSERT INTO INSCRIPCION(ci_estudiante, sigla, nota1, nota2, nota3, notafinal) VA
 INSERT INTO INSCRIPCION(ci_estudiante, sigla, nota1, nota2, nota3, notafinal) VALUES ('45634655', 'INF-324', 56, 70, 52, 87);
 
 GO
+
+SELECT ci AS 'CI', nombre_completo AS 'Nombre Completo', fecha_nacimiento AS 'Fecha Nacimiento', telefono AS 'Telefono', (
+	CASE
+		WHEN departamento LIKE '01' THEN 'Chuquisaca'
+		WHEN departamento LIKE '02' THEN 'La Paz'
+		WHEN departamento LIKE '03' THEN 'Cochabamba'
+		WHEN departamento LIKE '04' THEN 'Oruro'
+		WHEN departamento LIKE '05' THEN 'Potosi'
+		WHEN departamento LIKE '06' THEN 'Tarija'
+		WHEN departamento LIKE '07' THEN 'Santa Cruz'
+		WHEN departamento LIKE '08' THEN 'Beni'
+		WHEN departamento LIKE '09' THEN 'Pando'
+
+	END
+	
+) AS Departamento FROM PERSONA;
+
+SELECT ISNULL([01], 0) as 'Chuquisaca', ISNULL([02], 0) as 'La Paz', ISNULL([03], 0) as 'Cochabamba', ISNULL([04], 0) as 'Oruro',
+ ISNULL([05], 0) as 'Potosi', ISNULL([06], 0) as 'Tarija', ISNULL([07], 0) as 'Santa Cruz', ISNULL([08], 0) as 'Beni', ISNULL([09], 0) as 'Pando'
+FROM (
+    SELECT xs.departamento as departamento, AVG(xd.notafinal) as promedio
+	FROM INSCRIPCION xd, PERSONA xs WHERE xd.ci_estudiante LIKE xs.ci
+	GROUP BY departamento
+) AS datos
+PIVOT (
+    SUM(promedio)
+    FOR departamento IN ([01], [02], [03], [04], [05], [06], [07], [08], [09])
+) AS pivot_table
+
