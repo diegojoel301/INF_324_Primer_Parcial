@@ -61,7 +61,7 @@ namespace Ejercicio_7_inf_324_examen
             {
                 ServiceReference1.ServiceSoapClient WSClient = new ServiceReference1.ServiceSoapClient();
 
-                WSClient.eliminar_registro(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString()); // Anteriormente 1
+                WSClient.eliminar_registro(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString()); 
 
                 dataGridView1.Rows.RemoveAt(dataGridView1.SelectedCells[0].RowIndex);
             }*/
@@ -71,7 +71,7 @@ namespace Ejercicio_7_inf_324_examen
                 {
                     ServiceReference1.ServiceSoapClient WSClient = new ServiceReference1.ServiceSoapClient();
 
-                    WSClient.eliminar_registro(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    WSClient.eliminar_registro(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());// Anteriormente 1
 
                     dataGridView1.Rows.RemoveAt(dataGridView1.SelectedCells[0].RowIndex);
                 }
