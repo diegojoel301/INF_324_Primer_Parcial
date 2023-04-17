@@ -21,7 +21,7 @@
                         <td><?= $persona['nombre_completo'] ?></td>
                         <td><?= $persona['fecha_nacimiento'] ?></td>
                         <td><?= $persona['telefono'] ?></td>
-                        <td><?= $persona['departamento'] ?>
+  
                         <td>
                         <?php
                     $dep = "";
