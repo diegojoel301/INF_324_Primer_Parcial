@@ -6,6 +6,8 @@ Para hacer que funcione en otros equipos cambiar el host, user y password de las
 Otro punto es que bd_asp.sql es el script sql para la base de datos Sql Server sumado a la consulta del ejercicio 4
 Al igual que db_mysql.sql que es el script sql para la base de datos Mysql suamdo a la consulta del ejercicio 5.
 
+***Version del Framework del Ejercicio 7***
+Este ejercicio se hizo en la version de Framework 3.5, considerar en caso de pasar el proyecto a otro host.
 
 ***Notas para Ejercicio 7 Web Services***
 El Windows Form consume con efectividad el Web Service, pero considerar que si en caso de ejecutar la aplicacion en otro
