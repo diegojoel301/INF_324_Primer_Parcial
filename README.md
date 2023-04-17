@@ -4,7 +4,9 @@ Examen Primer Parcial INF-324
 ***Nota para base de datos***
 Para hacer que funcione en otros equipos cambiar el host, user y password de las conexiones sql
 Otro punto es que bd_asp.sql es el script sql para la base de datos Sql Server sumado a la consulta del ejercicio 4
-Al igual que db_mysql.sql que es el script sql para la base de datos Mysql suamdo a la consulta del ejercicio 5
+Al igual que db_mysql.sql que es el script sql para la base de datos Mysql suamdo a la consulta del ejercicio 5.
+
+
 ***Notas para Ejercicio 7 Web Services***
 El Windows Form consume con efectividad el Web Service, pero considerar que si en caso de ejecutar la aplicacion en otro
 host, crear otro WebService pero con el codigo que esta dentro de WebService3 el cual es el que yo utilice para resolver el
