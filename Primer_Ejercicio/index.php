@@ -12,7 +12,9 @@
 
 	<main>
 		<?php
-			$page = $_GET['page'];
+			if(isset($_GET['page']))
+			{
+				$page = $_GET['page'];
 			// Como tal no se incluye lo que hata en la variable $page ya que como consecuencia
 			// volvemos esta inclusion en un vector de ataque del tipo Local File Inclusion (LFI)
 			// o como tambien un Remote File Inclusion (RFI)
@@ -24,8 +26,9 @@
 				include "matematica.php";
 			else if($page == "informatica")
 				include "informatica.php";
-			else
-				include "main.php";
+				
+			}
+			include "main.php";
 		?>
 	</main>
 
