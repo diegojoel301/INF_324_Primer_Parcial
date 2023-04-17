@@ -1,3 +1,6 @@
+CREATE DATABASE MIBASEMINOMBRE;
+USE MIBASEMINOMBRE;
+
 CREATE TABLE USUARIO(ci varchar(50), usuario varchar(50),password varchar(255), rol varchar(100), PRIMARY KEY (ci));
 
 INSERT INTO USUARIO(ci, usuario, password, rol) VALUES ("12642534", "juan_pablo", md5("password123"), "director");
@@ -39,3 +42,22 @@ INSERT INTO INSCRIPCION(ci_estudiante, sigla, nota1, nota2, nota3, notafinal) VA
 INSERT INTO INSCRIPCION(ci_estudiante, sigla, nota1, nota2, nota3, notafinal) VALUES ('64383645', 'INF-324', 36, 30, 92, 75);
 INSERT INTO INSCRIPCION(ci_estudiante, sigla, nota1, nota2, nota3, notafinal) VALUES ('36466366', 'INF-319', 46, 20, 42, 76);
 INSERT INTO INSCRIPCION(ci_estudiante, sigla, nota1, nota2, nota3, notafinal) VALUES ('45634655', 'INF-324', 56, 70, 52, 87);
+
+-- Promedios:
+
+SELECT 
+      IFNULL(SUM(IF(departamento = '01', promedio, 0)), 0) AS 'Chuquisaca',
+      IFNULL(SUM(IF(departamento = '02', promedio, 0)), 0) AS 'La Paz',
+      IFNULL(SUM(IF(departamento = '03', promedio, 0)), 0) AS 'Cochabamba',
+      IFNULL(SUM(IF(departamento = '04', promedio, 0)), 0) AS 'Oruro',
+      IFNULL(SUM(IF(departamento = '05', promedio, 0)), 0) AS 'Potosi',
+      IFNULL(SUM(IF(departamento = '06', promedio, 0)), 0) AS 'Tarija',
+      IFNULL(SUM(IF(departamento = '07', promedio, 0)), 0) AS 'Santa Cruz',
+      IFNULL(SUM(IF(departamento = '08', promedio, 0)), 0) AS 'Beni',
+      IFNULL(SUM(IF(departamento = '09', promedio, 0)), 0) AS 'Pando'
+    FROM (
+      SELECT xs.departamento AS departamento, AVG(xd.notafinal) AS promedio
+      FROM INSCRIPCION xd, PERSONA xs 
+      WHERE xd.ci_estudiante = xs.ci
+      GROUP BY departamento
+    ) AS datos;

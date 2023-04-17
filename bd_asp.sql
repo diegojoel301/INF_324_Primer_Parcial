@@ -78,6 +78,8 @@ SELECT ci AS 'CI', nombre_completo AS 'Nombre Completo', fecha_nacimiento AS 'Fe
 	
 ) AS Departamento FROM PERSONA;
 
+-- Promedios:
+
 SELECT ISNULL([01], 0) as 'Chuquisaca', ISNULL([02], 0) as 'La Paz', ISNULL([03], 0) as 'Cochabamba', ISNULL([04], 0) as 'Oruro',
  ISNULL([05], 0) as 'Potosi', ISNULL([06], 0) as 'Tarija', ISNULL([07], 0) as 'Santa Cruz', ISNULL([08], 0) as 'Beni', ISNULL([09], 0) as 'Pando'
 FROM (
@@ -88,5 +90,5 @@ FROM (
 PIVOT (
     SUM(promedio)
     FOR departamento IN ([01], [02], [03], [04], [05], [06], [07], [08], [09])
-) AS pivot_table
+) AS pivot_table;
 
