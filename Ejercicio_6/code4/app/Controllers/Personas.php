@@ -85,7 +85,7 @@ class Personas extends Controller{
         $sql_cmd = sprintf($sql, @trim($this->escape_string($ci)), @trim($this->escape_string($nombre_completo)), @trim($this->escape_string($fecha_nacimiento)), @trim($this->escape_string($telefono)), @trim($this->escape_string($dep)));
         $persona->query($sql_cmd);
 
-        
+        return $this->response->redirect(site_url('/listar'));
 
     }
 
