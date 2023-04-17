@@ -1,0 +1,9 @@
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\bin\Debug\Ejercicio_7_inf_324_examen.exe.config
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\bin\Debug\Ejercicio_7_inf_324_examen.exe
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\bin\Debug\Ejercicio_7_inf_324_examen.pdb
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\obj\Debug\Ejercicio_7_inf_324_examen.csprojResolveAssemblyReference.cache
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\obj\Debug\Ejercicio_7_inf_324_examen.Form1.resources
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\obj\Debug\Ejercicio_7_inf_324_examen.Properties.Resources.resources
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\obj\Debug\Ejercicio_7_inf_324_examen.csproj.GenerateResource.Cache
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\obj\Debug\Ejercicio_7_inf_324_examen.exe
+c:\users\fernandocr\documents\visual studio 2012\Projects\Ejercicio_7_inf_324_examen\Ejercicio_7_inf_324_examen\obj\Debug\Ejercicio_7_inf_324_examen.pdb
