@@ -1,0 +1,33 @@
+GET /ejercicio_8/rest_api.php HTTP/1.1
+Host: 127.0.0.1
+
+POST /ejercicio_8/rest_api.php HTTP/1.1
+Host: 127.0.0.1
+Content-Type: application/json
+
+{
+    "ci": "645786467",
+    "nombre_completo": "Juan Pablo Revollo Esprella",
+    "fecha_nacimiento": "2002-12-12",
+    "telefono": "+591 32467234",
+    "departamento": "01"
+}
+
+
+PUT /ejercicio_8/rest_api.php HTTP/1.1
+Host: 127.0.0.1
+Content-Type: application/json
+
+{
+    "ci": "645786467",
+    "nombre_completo": "Juan Pablo Revollo",
+    "fecha_nacimiento": "2002-12-12",
+    "telefono": "+591 5437656",
+    "departamento": "03"
+}
+
+
+DELETE /ejercicio_8/rest_api.php?ci=645786467 HTTP/1.1
+Host: 127.0.0.1
+
+
