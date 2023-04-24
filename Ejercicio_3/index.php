@@ -34,8 +34,11 @@
         </nav>
         <?php
             session_start();
-            if($_SESSION['logged_user'] != "" and $_SESSION['logged_rol'] != "")
-                echo "Bienvenid@ ".$_SESSION['logged_user']." con rol de ".$_SESSION['logged_rol']. "<br>";
+            if(isset($_SESSION['logged_user']))
+            {
+                if($_SESSION['logged_user'] != "" and $_SESSION['logged_rol'] != "")
+                    echo "Bienvenid@ ".$_SESSION['logged_user']." con rol de ".$_SESSION['logged_rol']. "<br>";
+            }
         ?>
 
         <div class="card">
