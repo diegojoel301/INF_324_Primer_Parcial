@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
     "ci": "645786467",
-    "nombre_completo": "Juan Pablo Revollo Esprella",
+    "nombre_completo": "Juan Pablo Padilla",
     "fecha_nacimiento": "2002-12-12",
     "telefono": "+591 32467234",
     "departamento": "01"
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 {
     "ci": "645786467",
-    "nombre_completo": "Juan Pablo Revollo",
+    "nombre_completo": "Juan Pablo Quintana",
     "fecha_nacimiento": "2002-12-12",
     "telefono": "+591 5437656",
     "departamento": "03"
